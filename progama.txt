@@ -1,0 +1,19 @@
+if main( y )
+{
+    u = 10;
+    int valor;
+    char letras[5];
+    valor = dobro(5);
+    if(valor >= 10)
+        letras[2] = 'a';
+    else
+        letras[2] = 'b';
+        teste123 = 14.5;
+}
+int dobro(int x)
+{
+    jeyziel = 485.5 + 890.9;
+    return 2*x;
+    asdas = 15;
+    relatorio = 16;
+} 
