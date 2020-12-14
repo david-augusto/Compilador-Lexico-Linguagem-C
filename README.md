@@ -1,21 +1,15 @@
 # Compilador-Lexico-Linguagem-C
 
-1. OBJETIVO
-O objetivo desse projeto foi implementar um robô controlado que possa se mover
-por meio de dois motores DC. O robô deve seguir nas direções determinadas
-pelos comandos (frente, traz, direita, esquerda e meia-volta).
+    1. OBJETIVO
+    O objetivo desse projeto foi desenvolver e projetar a fase de Análise Léxica de um Compilador para a linguagem de programação C.
 
-2. RESULTADOS EXPERIMENTAIS
-Os resultados alcançados foram os esperados, onde estes foram descritos na
-parte do objetivo. A partir do código feito na linguagem C, foi criado cinco funções
-que designava o sentido do robô, são elas:
-FRENTEROBO - Faz o robô andar para a frente;
-TRASROBO - Faz o robô andar para trás;
-MEIAVOLTADIREITA - Faz o robô andar meia volta para direita;
-MEIAVOLTAESQUERDA - Faz o robô andar meia volta para esquerda;
-PARAROBO - Faz o robô parar;
-Após a criação das funções foram criadas várias condições IF e else baseadas em
-uma tabela verdade feita com os sensores internos e externos nomeados comoSEE, SCE, SCD, SED, e de acordo com a tabela verdade é chamado alguma
-função citada acima.
-O ambiente de programação utilizado foi o MicroC. E as ferramentas utilizadas
-foram o MPLAB, PROTEUS
+    2. RESULTADOS EXPERIMENTAIS
+    A partir de um arquivo .txt, que contém um programa em C, foram gerados dois arquivos: a tabela de símbolos e a de tokens. Foram especificados e criados tokens, para               determinados autômatos reconhecidos.
+    O ambiente de programação utilizado foi o Dev C (no Windows) e o GCC – GNU Compiler Collection (no Linux).
+    
+    3. ANÁLISE E CONCLUSÃO
+    Foi criado um arquivo com as palavras-chaves e também foi criada uma função para verificar se a palavra gerada no autômato era uma palavra-chave ou não. Se for uma palavra-       chave, a tabela de símbolos irá retornar a posição da palavra. Se não for, a função irá verificar se já existe uma palavra igual na tabela de símbolos. Se existir, ela vai         guardar a posição da palavra. Do contrário, a palavra será armazenada na última linha do arquivo.
+    Foram criados autômatos para cada especificação de token dada pelo professor. A função desses autômatos é reconhecer os tokens.
+
+        
+        
